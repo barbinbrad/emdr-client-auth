@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FACEBOOK_REDIRECT_LINK = exports.FACEBOOK_OATH_PARAMS = exports.FACEBOOK_REDIRECT_URI = exports.FACEBOOK_REDIRECT_PATH = exports.FACEBOOK_CLIENT_ID = exports.FACEBOOK_AUTH_ENDPOINT = exports.APPLE_REDIRECT_LINK = exports.APPLE_OAUTH_PARAMS = exports.APPLE_REDIRECT_URI = exports.APPLE_REDIRECT_PATH = exports.APPLE_CLIENT_ID = exports.APPLE_AUTH_ENDPOINT = exports.GOOGLE_REDIRECT_LINK = exports.GOOGLE_OAUTH_PARAMS = exports.GOOGLE_REDIRECT_URI = exports.GOOGLE_REDIRECT_PATH = exports.GOOGLE_URL_ROOT = exports.GOOGLE_AUTH_ENDPOINT = exports.GOOGLE_CLIENT_ID = undefined;
+exports.FACEBOOK_REDIRECT_LINK = exports.FACEBOOK_OAUTH_PARAMS = exports.FACEBOOK_REDIRECT_URI = exports.FACEBOOK_REDIRECT_PATH = exports.FACEBOOK_CLIENT_ID = exports.FACEBOOK_AUTH_ENDPOINT = exports.APPLE_REDIRECT_LINK = exports.APPLE_OAUTH_PARAMS = exports.APPLE_REDIRECT_URI = exports.APPLE_REDIRECT_PATH = exports.APPLE_CLIENT_ID = exports.APPLE_AUTH_ENDPOINT = exports.GOOGLE_REDIRECT_LINK = exports.GOOGLE_OAUTH_PARAMS = exports.GOOGLE_REDIRECT_URI = exports.GOOGLE_REDIRECT_PATH = exports.GOOGLE_URL_ROOT = exports.GOOGLE_AUTH_ENDPOINT = exports.GOOGLE_CLIENT_ID = undefined;
 
 var _document = require('global/document');
 
@@ -20,7 +20,7 @@ if (_document2.default.location) {
   redirectOrigin = _document2.default.location.origin;
 }
 
-var GOOGLE_CLIENT_ID = exports.GOOGLE_CLIENT_ID = 'XXXXXX';
+var GOOGLE_CLIENT_ID = exports.GOOGLE_CLIENT_ID = '898654513430-n8j6f8fdi0ib09ekvnr3d4fc0j85qaar.apps.googleusercontent.com';
 var GOOGLE_AUTH_ENDPOINT = exports.GOOGLE_AUTH_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth';
 var GOOGLE_URL_ROOT = exports.GOOGLE_URL_ROOT = 'https://www.googleapis.com/';
 var GOOGLE_REDIRECT_PATH = exports.GOOGLE_REDIRECT_PATH = '/auth/g/redirect';
@@ -52,7 +52,7 @@ var FACEBOOK_AUTH_ENDPOINT = exports.FACEBOOK_AUTH_ENDPOINT = '';
 var FACEBOOK_CLIENT_ID = exports.FACEBOOK_CLIENT_ID = 'XXXXXX';
 var FACEBOOK_REDIRECT_PATH = exports.FACEBOOK_REDIRECT_PATH = '/auth/f/redirect';
 var FACEBOOK_REDIRECT_URI = exports.FACEBOOK_REDIRECT_URI = redirectOrigin + FACEBOOK_REDIRECT_PATH;
-var FACEBOOK_OATH_PARAMS = exports.FACEBOOK_OATH_PARAMS = {
+var FACEBOOK_OAUTH_PARAMS = exports.FACEBOOK_OAUTH_PARAMS = {
   client_id: FACEBOOK_CLIENT_ID,
   redirect_uri: FACEBOOK_REDIRECT_URI,
   response_type: 'code',

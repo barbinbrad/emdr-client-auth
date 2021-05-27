@@ -6,7 +6,7 @@ if (document.location) {
   redirectOrigin = document.location.origin;
 }
 
-export const GOOGLE_CLIENT_ID = 'XXXXXX';
+export const GOOGLE_CLIENT_ID = '898654513430-n8j6f8fdi0ib09ekvnr3d4fc0j85qaar.apps.googleusercontent.com';
 export const GOOGLE_AUTH_ENDPOINT = 'https://accounts.google.com/o/oauth2/auth';
 export const GOOGLE_URL_ROOT = 'https://www.googleapis.com/';
 export const GOOGLE_REDIRECT_PATH = '/auth/g/redirect';
@@ -39,7 +39,7 @@ export const FACEBOOK_AUTH_ENDPOINT = '';
 export const FACEBOOK_CLIENT_ID = 'XXXXXX';
 export const FACEBOOK_REDIRECT_PATH = '/auth/f/redirect';
 export const FACEBOOK_REDIRECT_URI = redirectOrigin + FACEBOOK_REDIRECT_PATH;
-export const FACEBOOK_OATH_PARAMS = {
+export const FACEBOOK_OAUTH_PARAMS = {
     client_id: FACEBOOK_CLIENT_ID,
     redirect_uri: FACEBOOK_REDIRECT_URI,
     response_type: 'code',

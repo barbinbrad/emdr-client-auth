@@ -10,7 +10,7 @@ export async function logOut() {
     }
 }
 
-export async function getTokenInternal() {
+export function getTokenInternal() {
     if (typeof localStorage != undefined) {
         if (localStorage.authorization) {
             return localStorage.authorization;
@@ -29,19 +29,19 @@ export async function getAccessToken() {
     if (!token) {
         try {
             token = await storage.getItem('authorization');
-        }
-        catch (e) {
+        } catch (e) {
             useForage = false;
         }
     }
-    
+
     if (token) {
+        console.log('Token is : ' + token);
         isAuthenticated = true;
         if (useForage) {
             await storage.setItem('authorization', token);
-        }
     }
+  }
 
-    return token;
+  return token;
 
 }

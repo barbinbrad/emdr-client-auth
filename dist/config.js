@@ -36,9 +36,9 @@ var GOOGLE_OAUTH_PARAMS = exports.GOOGLE_OAUTH_PARAMS = {
 var GOOGLE_REDIRECT_LINK = exports.GOOGLE_REDIRECT_LINK = [GOOGLE_AUTH_ENDPOINT, _querystringify2.default.stringify(GOOGLE_OAUTH_PARAMS)].join('?');
 
 var APPLE_AUTH_ENDPOINT = exports.APPLE_AUTH_ENDPOINT = 'https://appleid.apple.com/auth/authorize';
-var APPLE_CLIENT_ID = exports.APPLE_CLIENT_ID = 'XXXXXX';
+var APPLE_CLIENT_ID = exports.APPLE_CLIENT_ID = 'app.eyemovement.web';
 var APPLE_REDIRECT_PATH = exports.APPLE_REDIRECT_PATH = '/auth/a/redirect';
-var APPLE_REDIRECT_URI = exports.APPLE_REDIRECT_URI = redirectOrigin + APPLE_REDIRECT_PATH;
+var APPLE_REDIRECT_URI = exports.APPLE_REDIRECT_URI = 'https://eyemovement.app' + APPLE_REDIRECT_PATH;
 var APPLE_OAUTH_PARAMS = exports.APPLE_OAUTH_PARAMS = {
   client_id: APPLE_CLIENT_ID,
   redirect_uri: APPLE_REDIRECT_URI,
@@ -48,8 +48,8 @@ var APPLE_OAUTH_PARAMS = exports.APPLE_OAUTH_PARAMS = {
 };
 var APPLE_REDIRECT_LINK = exports.APPLE_REDIRECT_LINK = [APPLE_AUTH_ENDPOINT, _querystringify2.default.stringify(APPLE_OAUTH_PARAMS)].join('?');
 
-var FACEBOOK_AUTH_ENDPOINT = exports.FACEBOOK_AUTH_ENDPOINT = '';
-var FACEBOOK_CLIENT_ID = exports.FACEBOOK_CLIENT_ID = 'XXXXXX';
+var FACEBOOK_AUTH_ENDPOINT = exports.FACEBOOK_AUTH_ENDPOINT = 'https://www.facebook.com/v10.0/dialog/oauth';
+var FACEBOOK_CLIENT_ID = exports.FACEBOOK_CLIENT_ID = '272276201311217';
 var FACEBOOK_REDIRECT_PATH = exports.FACEBOOK_REDIRECT_PATH = '/auth/f/redirect';
 var FACEBOOK_REDIRECT_URI = exports.FACEBOOK_REDIRECT_URI = redirectOrigin + FACEBOOK_REDIRECT_PATH;
 var FACEBOOK_OAUTH_PARAMS = exports.FACEBOOK_OAUTH_PARAMS = {

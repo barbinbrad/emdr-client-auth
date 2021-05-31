@@ -35,7 +35,6 @@ export async function getAccessToken() {
     }
 
     if (token) {
-        console.log('Token is : ' + token);
         isAuthenticated = true;
         if (useForage) {
             await storage.setItem('authorization', token);

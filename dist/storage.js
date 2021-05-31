@@ -77,25 +77,24 @@ var getAccessToken = exports.getAccessToken = function () {
 
                     case 11:
                         if (!token) {
-                            _context2.next = 17;
+                            _context2.next = 16;
                             break;
                         }
 
-                        console.log('Token is : ' + token);
                         exports.isAuthenticated = isAuthenticated = true;
 
                         if (!useForage) {
-                            _context2.next = 17;
+                            _context2.next = 16;
                             break;
                         }
 
-                        _context2.next = 17;
+                        _context2.next = 16;
                         return _localforage2.default.setItem('authorization', token);
 
-                    case 17:
+                    case 16:
                         return _context2.abrupt('return', token);
 
-                    case 18:
+                    case 17:
                     case 'end':
                         return _context2.stop();
                 }
